@@ -10,14 +10,14 @@ export const dayTheme = {
 export const nightTheme = {
 	bg: "#000",
 	text: "white",
-	grey: 'rgb(185, 185, 185)',
+	grey: 'white',
 	red: '#FA5851'
 };
 
 export const GlobalStyle = createGlobalStyle`
 	body {
 		background: ${ props => props.theme.bg };
-		font-family: "kotori_roseregular", Arial Verdana, sans-serif;
+		font-family: "kotori_roseregular", sans-serif;
 		font-smoothing: antialiased;
 		font-size:15px;
 		line-height:15px;
@@ -37,6 +37,7 @@ a {
 		url("font/kotorirose-bold-webfont.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
+	font-display: fallback;
 }
 
 @font-face {
@@ -45,6 +46,7 @@ a {
 		url("font/kotorirose-regular-webfont.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
+	font-display: fallback;
 }
 
 img {
