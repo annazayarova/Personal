@@ -17,7 +17,7 @@ export const nightTheme = {
 export const GlobalStyle = createGlobalStyle`
 	body {
 		background: ${ props => props.theme.bg };
-		font-family: "kotori_roseregular", sans-serif;
+		font-family: "kotori_roseregular";
 		font-smoothing: antialiased;
 		font-size:15px;
 		line-height:15px;
@@ -29,24 +29,6 @@ export const GlobalStyle = createGlobalStyle`
 a {
 	color: ${props => props.theme.text};
 	text-decoration:none;
-}
-
-@font-face {
-	font-family: "kotori_rosebold";
-  	src: url("font/kotorirose-bold-webfont.woff2") format("woff2"),
-		url("font/kotorirose-bold-webfont.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-	font-display: fallback;
-}
-
-@font-face {
-	font-family: "kotori_roseregular";
-	src: url("font/kotorirose-regular-webfont.woff2") format("woff2"),
-		url("font/kotorirose-regular-webfont.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-	font-display: fallback;
 }
 
 img {
