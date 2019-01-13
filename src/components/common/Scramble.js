@@ -80,6 +80,7 @@ class Scramble extends React.Component {
     	}
     	const phrases = [
 			  'Frontend, Interactive, Coder',
+			  'Web designer, Markup engineer',
 			  'Creative, Photographer, Traveller'
     	];
 

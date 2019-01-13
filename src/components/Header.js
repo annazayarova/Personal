@@ -45,8 +45,9 @@ class Header extends PureComponent {
                 </Logo>
 
                 <Nav>
-            	    <Link to="/contact">
-                        Contact me
+                    <Link rel="noopener noreferrer"
+                        href="mailto:annazayarova@gmail.com">
+                            Contact me
                     </Link>
         	    </Nav>
             </Head>
