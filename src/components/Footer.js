@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import styled from "styled-components";
 
@@ -43,9 +43,7 @@ const Wrapper = styled.div`
     width: 100%;
 
     @media (max-width: 576px) {
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: center;
+        padding-left: 30px;
     }
 `;
 
@@ -53,9 +51,9 @@ const StyledLink = styled.a`
     color: ${ props => props.theme.bg };
     font-size: 16px;
     font-family: "kotori_roseregular";
-    margin: 0 40px 0 0;
+    margin-right: 40px;
 
     @media (max-width: 576px) {
-        margin: 15px 0
+        margin-right: 20px;
     }
 `;

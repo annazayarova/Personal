@@ -44,6 +44,7 @@ const Title = styled.div`
     padding-left: 60px;
 
     @media (max-width: 576px) {
+        padding-left: 30px;
     }
 `;
 
@@ -51,7 +52,8 @@ const H2 = styled.h2`
     color: ${ props => props.theme.text };
     font-family: "kotori_rosebold";
     font-size: 60px;
-    margin-bottom: 20px;
+    line-height: 40px;
+    margin-bottom: 5px;
     padding: 0;
 
     @media (max-width: 576px) {

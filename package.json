@@ -2,7 +2,9 @@
   "name": "myportfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://annazayarova.com",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-router-dom": "^4.3.1",
@@ -10,6 +12,8 @@
     "styled-components": "^4.0.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

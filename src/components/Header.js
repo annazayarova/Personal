@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -35,6 +35,10 @@ const Head = styled.header`
     position: fixed;
     width: 100%;
     z-index: 1;
+
+    @media (max-width: 576px) {
+        padding: 30px;
+    }
 `;
 
 const Logo = styled.div`
