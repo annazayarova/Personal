@@ -2,48 +2,48 @@ import React, { Component } from 'react';
 
 import styled from "styled-components";
 
+import DayOfWeek from "./common/DayOfWeek";
+import Footer from "./Footer";
 import Scramble from "./common/Scramble";
 import ScrollOnTop from "./common/ScrollOnTop";
-import DayOfWeek from "./common/DayOfWeek";
 import Waves from "./common/Waves";
 
-const Content = styled.div`
-    width: 100%;
-    height: 100vh;
-    margin-bottom: 300px;
-    overflow: hidden;
-`;
+class Home extends Component {
+    render() {
+        return (
+            <Content>
+                <ScrollOnTop />
 
-const Index = styled.div`
-    background: ${ props => props.theme.bg }
+    	        <Title>
+    		        <H2>Web Development</H2>
+
+                    <Scramble />
+    	        </Title>
+
+                <Footer />
+            </Content>
+        );
+    }
+}
+
+export default Home;
+
+const Content = styled.div`
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    position: relative;
+    overflow: hidden;
     width: 100%;
 `;
 
 const Title = styled.div`
-    left: 190px;
-    position: absolute;
-    top: 30%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    padding-left: 60px;
 
     @media (max-width: 576px) {
-        left: 25px;
-    }
-`;
-
-const H1 = styled.h1`
-    color: ${ props => props.theme.grey };
-    font-family: "kotori_roseregular";
-    font-size: 60px;
-    font-weight: normal;
-    line-height: 60px;
-    margin: 0 0 20px;
-    padding: 0;
-
-    @media (max-width: 576px) {
-        font-size: 40px;
-        line-height: 40px;
-        margin: 0 0 10px;
     }
 `;
 
@@ -51,40 +51,10 @@ const H2 = styled.h2`
     color: ${ props => props.theme.text };
     font-family: "kotori_rosebold";
     font-size: 60px;
-    font-weight: normal;
-    line-height: 60px;
-    margin: 0 0 20px;
+    margin-bottom: 20px;
     padding: 0;
 
     @media (max-width: 576px) {
         font-size: 40px;
-        line-height: 40px;
-        margin: 0 0 10px;
     }
 `;
-
-class Home extends Component {
-    render() {
-        return (
-            <div>
-	            <ScrollOnTop />
-
-                <Content>
-                    <Index>
-    	                <Title>
-    		                <H1>Hi, I'm Anna</H1>
-
-                            <H2>Freelance</H2>
-
-    		                <H2>Web Developer</H2>
-
-                            <Scramble />
-    	                </Title>
-                    </Index>
-                </Content>
-            </div>
-         );
-    }
-}
-
-export default Home;

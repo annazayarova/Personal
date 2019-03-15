@@ -4,14 +4,14 @@ export const dayTheme = {
 	bg: "white",
 	text: "black",
 	grey: 'rgb(185, 185, 185)',
-	red: '#FA5851'
+	red: '#E04343'
 };
 
 export const nightTheme = {
 	bg: "#000",
 	text: "white",
 	grey: 'white',
-	red: '#FA5851'
+	red: 'white'
 };
 
 export const GlobalStyle = createGlobalStyle`
@@ -27,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 a {
-	color: ${props => props.theme.text};
+	color: ${ props => props.theme.text };
 	text-decoration:none;
 }
 

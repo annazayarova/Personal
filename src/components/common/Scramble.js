@@ -79,9 +79,9 @@ class Scramble extends React.Component {
       		}
     	}
     	const phrases = [
-			  'Frontend, Interactive, Coder',
-			  'Web designer, Markup engineer',
-			  'Creative, Photographer, Traveller'
+			  'Progressive web applications',
+			  'headless e-commerce solutions',
+			  'modern technologies: ES6, React, GraphQL'
     	];
 
     	const el = document.querySelector(".scramble");
