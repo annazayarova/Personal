@@ -3,3 +3,5 @@
 [annazayarova.com](http://annazayarova.com)
 
 My portfolio website. It was built with React.js and styled-components
+
+To deploy on GitHub: npm run deploy
